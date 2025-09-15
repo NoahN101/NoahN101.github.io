@@ -7,8 +7,8 @@ $(function () {
   function setup() {
     if (firstTimeSetup) {
       halleImage = document.getElementById("player");
-      projectileImage = document.getElementById("water");
-      cannonImage = document.getElementById("waterGun");
+      projectileImage = document.getElementById("projectile");
+      cannonImage = document.getElementById("cannon");
       $(document).on("keydown", handleKeyDown);
       $(document).on("keyup", handleKeyUp);
       firstTimeSetup = false;
@@ -49,12 +49,12 @@ createPlatform(1050, 625, 60, 10, "red");
 createPlatform(1225, 250, 60, 10, "red");
 createPlatform(1225, 500, 60, 10, "red");
     // TODO 3 - Create Collectables
-//createCollectable("red", 175, 225);
-//createCollectable("blue", 525, 225);
-//createCollectable("yellow", 525, 525);
-//createCollectable("green", 1050, 400);
+createCollectable("red", 175, 225);
+createCollectable("blue", 525, 225);
+createCollectable("yellow", 525, 525);
+createCollectable("green", 1050, 400);
 //     // TODO 4 - Create Cannons
-createwaterGun("top", 275, 2000);
+createCannon("top", 275, 2000);
 createCannon("bottom", 625, 1750);
 createCannon("top", 975, 1500);
 createCannon("bottom", 1125, 1250);
