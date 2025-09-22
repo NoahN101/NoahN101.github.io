@@ -92,8 +92,8 @@ let halleImage;
 let animationDetails = {};
 
 var collectableList = {
-  red: { image: "images/collectables/red.png"},
-  green: { image: "images/collectables/green.png"},
-  blue: { image: "images/collectables/green.png"},
-  yellow: { image: "images/collectables/green.png"}
+  red: { image: "images/collectables/red.png" },
+  green: { image: "images/collectables/green.png" },
+  blue: { image: "images/collectables/blue.png" },
+  yellow: { image: "images/collectables/yellow.png" },
 };

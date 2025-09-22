@@ -3,7 +3,10 @@ body {
 }
 
 canvas {
-  background-color: lightblue;
+  /*background-color: lightblue; */
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/5/53/Wipeout_2011_logo.png");
+  background-size: cover; 
+  
   margin: 20px;
 }
 
