@@ -34,8 +34,8 @@ var runLevels = function (window) {
       obstacleImage.y = -25;
     }
     createSawBlade(500, 290);
-    createSawBlade(1000, 310);
-    createSawBlade(1500, 225);
+    createSawBlade(1000, 325);
+    createSawBlade(1500, 210);
 
     function createEnemy(x, y) {
     var enemy = game.createGameItem("enemy", 25);
