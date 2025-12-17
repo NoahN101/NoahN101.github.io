@@ -76,7 +76,7 @@ var runLevels = function (window) {
     };
   }
     createReward(750, groundY - 100)
-    createReward(1500, groundY - 100)
+    createReward(1600, groundY - 100)
     createReward(2000, groundY - 100)
 
     function createMarker(x, y) {
@@ -95,11 +95,25 @@ var runLevels = function (window) {
     marker.onProjectileCollision = function () {
       startLevel();
     };
-  }
+  } 
     createMarker(2500, groundY - 50)
     function startLevel() {
-      // TODO 13 goes below here
+      // TODO 13 goes here 
+    var level = levelData[currentLevel]
+    var levelObjects = level.gameItems
+    for (var i = 0; i < levelObjects.length; i++) {
+    var eachObject = levelObjects[i];
 
+    if (item.type === "sawblade") {
+    createSawBlade(item.x, item.y);
+    } else if (item.type === "enemy") {
+    createEnemy(item.x, item.y);
+    } else if (item.type === "reward") {
+    createReward(item.x, item.y);
+    } else if (item.type === "marker") {
+    createMarker(item.x, item.y);
+  }
+}
       //////////////////////////////////////////////
       // DO NOT EDIT CODE BELOW HERE
       //////////////////////////////////////////////
