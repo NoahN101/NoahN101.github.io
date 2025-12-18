@@ -33,9 +33,9 @@ var runLevels = function (window) {
       obstacleImage.x = -25;
       obstacleImage.y = -25;
     }
-    createSawBlade(500, 290);
-    createSawBlade(1000, 325);
-    createSawBlade(1500, 210);
+    //createSawBlade(500, 290);
+    //createSawBlade(1000, 325);
+    //createSawBlade(1500, 210);
 
     function createEnemy(x, y) {
     var enemy = game.createGameItem("enemy", 25);
@@ -53,9 +53,9 @@ var runLevels = function (window) {
       enemy.fadeOut();
     };
   }
-    createEnemy(400, groundY - 35);
-    createEnemy(900, groundY - 50);
-    createEnemy(1750, groundY - 25);
+    //createEnemy(400, groundY - 35);
+    //createEnemy(900, groundY - 50);
+    //createEnemy(1750, groundY - 25);
 
     function createReward(x, y) {
     var reward = game.createGameItem("reward", 25);
@@ -75,9 +75,9 @@ var runLevels = function (window) {
       reward.fadeOut();
     };
   }
-    createReward(750, groundY - 100)
-    createReward(1600, groundY - 100)
-    createReward(2000, groundY - 100)
+    //createReward(750, groundY - 100)
+    //createReward(1600, groundY - 100)
+    //createReward(2000, groundY - 100)
 
     function createMarker(x, y) {
     var marker = game.createGameItem("Marker", 25);
@@ -96,13 +96,15 @@ var runLevels = function (window) {
       startLevel();
     };
   } 
-    createMarker(2500, groundY - 50)
+    //createMarker(2500, groundY - 50)
+
+
     function startLevel() {
       // TODO 13 goes here 
     var level = levelData[currentLevel]
     var levelObjects = level.gameItems
     for (var i = 0; i < levelObjects.length; i++) {
-    var eachObject = levelObjects[i];
+    var item = levelObjects[i];
 
     if (item.type === "sawblade") {
     createSawBlade(item.x, item.y);
